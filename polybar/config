@@ -1,0 +1,33 @@
+[global/wm]
+include-file = $HOME/.config/polybar/colors
+include-file = $HOME/.config/polybar/modules
+include-file = $HOME/.config/polybar/system
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[bar/bar]
+bottom = false
+fixed-center = true
+enable-ipc = true
+background = ${color.background}
+#background = #cc000000
+foreground = ${color.foreground}
+radius = 0
+font-0 = "InconsolataGC Nerd Font Medium:size=10.5;3"
+font-1 = "JetBrainsMono Nerd Font:size=12;3"
+font-2 = "FontAwesome:pixelsize14;2"
+font-3 = "Material Icons:pizelsize14;4"
+modules-left= launcher cpu memory workspaces title 
+modules-center = spotify
+modules-right = battery volume brightness moonphase time powermenu 
+width = 100%
+height = 42
+border-size = 0
+border-color = #00000000
+line-size = 2
+tray-detached = false
+offset-x = 0%
+offset-y = 0%
+tray-offset-x = 0%
+tray-position = right
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
